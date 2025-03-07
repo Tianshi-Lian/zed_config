@@ -1,0 +1,57 @@
+// Zed keymap
+
+//
+
+// For information on binding keys, see the Zed
+
+// documentation: https://zed.dev/docs/key-bindings
+
+//
+
+// To see the default key bindings run `zed: open default keymap`
+
+// from the command palette.
+
+[
+  {
+    "context": "Workspace",
+
+    "bindings": {}
+  },
+  {
+    "context": "Terminal",
+
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Editor",
+
+    "bindings": {
+      // Subword navigation
+      "ctrl-left": "editor::MoveToPreviousSubwordStart",
+      "ctrl-right": "editor::MoveToNextSubwordEnd",
+      "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
+      "ctrl-shift-right": "editor::SelectToNextWordEnd",
+      "ctrl-backspace": "editor::DeleteToPreviousSubwordStart",
+      "ctrl-delete": "editor::DeleteToNextSubwordEnd",
+      // Block jumping
+      "ctrl-down": "editor::MoveToEndOfParagraph",
+      "ctrl-up": "editor::MoveToStartOfParagraph",
+      "ctrl-shift-down": "editor::SelectToEndOfParagraph",
+      "ctrl-shift-up": "editor::SelectToStartOfParagraph",
+      // Misc commands
+      "ctrl-shift-d": "editor::DeleteLine",
+      "ctrl-shift-k": "editor::DuplicateLineDown",
+      "ctrl-i": "file_finder::Toggle",
+      // Panes & tabs
+      "ctrl-shift-l": "pane::SplitVertical",
+      "ctrl-,": "workspace::ActivateNextPane",
+      "ctrl-.": "workspace::SwapPaneRight",
+      "ctrl-u": "tab_switcher::Toggle",
+      // Terminal
+      "ctrl-'": "terminal_panel::ToggleFocus"
+    }
+  }
+]
