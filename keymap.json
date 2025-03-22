@@ -45,6 +45,9 @@
       "ctrl-shift-d": "editor::DeleteLine",
       "ctrl-shift-k": "editor::DuplicateLineDown",
       "ctrl-i": "file_finder::Toggle",
+      "ctrl-k ctrl-g": "editor::GoToDefinition",
+      //"ctrl-space": "editor::ToggleCodeActions",
+      "ctrl-tab": "editor::AcceptEditPrediction",
       // Panes & tabs
       "ctrl-shift-l": "pane::SplitVertical",
       "ctrl-,": "workspace::ActivateNextPane",
