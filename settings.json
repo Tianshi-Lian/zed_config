@@ -7,20 +7,46 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "features": {
-    "edit_prediction_provider": "none"
-  },
   "icon_theme": "Catppuccin Mocha",
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_font_family": "Maple Mono",
-  "buffer_font_features": {
-    "calt": true
-  },
-  "show_completions_on_input": false,
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "Catppuccin Mocha"
+  },
+  "pane_split_direction_vertical": "right",
+  "preferred_line_length": 128,
+  "buffer_font_features": {
+    "calt": true
+  },
+  "show_completions_on_input": true,
+  "auto_signature_help": true,
+  "edit_predictions": {
+    "disabled_globs": [],
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
+  "show_edit_predictions": false,
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path_lookup": true,
+        "path": "clangd",
+        "arguments": [
+          "--header-insertion=never"
+        ]
+      }
+    }
   }
 }
